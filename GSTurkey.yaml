@@ -1,0 +1,74 @@
+mixed-port: 7890
+allow-lan: true
+mode: Rule
+log-level: info
+proxies:
+  - {name: 1.Turkey🇹🇷, server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 2.Turkey🇹🇷, server: 185.219.134.182, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130}
+  - {name: 3.Turkey🇹🇷, server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 4.Turkey🇹🇷, server: 141.98.119.180, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130}
+  - {name: 5.Turkey🇹🇷, server: 141.98.119.156, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130}
+  - {name: 6.Turkey🇹🇷, server: 185.219.134.52, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130}
+  - {name: 7.Turkey🇹🇷, server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 8.Turkey🇹🇷, server: 185.17.113.234, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 9.Turkey🇹🇷, server: 185.219.134.182, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130}
+  - {name: 10.Turkey🇹🇷, server: 185.219.134.182, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130}
+  - {name: 11.Turkey🇹🇷, server: 185.219.134.52, port: 50007, type: ss, cipher: aes-256-cfb, password: !<str> 7122910143}
+  - {name: 12.Turkey🇹🇷, server: 185.219.134.182, port: 50007, type: ss, cipher: aes-256-cfb, password: !<str> 7122910143}
+  - {name: 13.Turkey🇹🇷, server: 141.98.119.156, port: 50007, type: ss, cipher: aes-256-cfb, password: !<str> 7122910143}
+  - {name: 14.Turkey🇹🇷, server: 185.219.133.176, port: 50007, type: ss, cipher: aes-256-cfb, password: !<str> 7122910143}
+  - {name: 15.Turkey 🇹🇷, server: 141.98.119.156, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130}
+  - {name: 16.Turkey 🇹🇷, server: 185.219.134.52, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130}
+  - {name: 17.Turkey 🇹🇷, server: 141.98.119.180, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130}
+  - {name: YouTube without ads, server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: Fast 1, server: 172.99.190.186, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+proxy-groups:
+  - name: 🔰 SELECT(@BN_CHANLL)
+    type: select
+    proxies:
+      - ♻️ BESTPING(@BN_CHANLL)
+      - 1.Turkey🇹🇷
+      - 2.Turkey🇹🇷
+      - 3.Turkey🇹🇷
+      - 4.Turkey🇹🇷
+      - 5.Turkey🇹🇷
+      - 6.Turkey🇹🇷
+      - 7.Turkey🇹🇷
+      - 8.Turkey🇹🇷
+      - 9.Turkey🇹🇷
+      - 10.Turkey🇹🇷
+      - 11.Turkey🇹🇷
+      - 12.Turkey🇹🇷
+      - 13.Turkey🇹🇷
+      - 14.Turkey🇹🇷
+      - 15.Turkey 🇹🇷
+      - 16.Turkey 🇹🇷
+      - 17.Turkey 🇹🇷
+      - YouTube without ads
+      - Fast 1
+  - name: ♻️ BESTPING(@BN_CHANLL)
+    type: url-test
+    url: http://google.com
+    interval: 300
+    proxies:
+      - 1.Turkey🇹🇷
+      - 2.Turkey🇹🇷
+      - 3.Turkey🇹🇷
+      - 4.Turkey🇹🇷
+      - 5.Turkey🇹🇷
+      - 6.Turkey🇹🇷
+      - 7.Turkey🇹🇷
+      - 8.Turkey🇹🇷
+      - 9.Turkey🇹🇷
+      - 10.Turkey🇹🇷
+      - 11.Turkey🇹🇷
+      - 12.Turkey🇹🇷
+      - 13.Turkey🇹🇷
+      - 14.Turkey🇹🇷
+      - 15.Turkey 🇹🇷
+      - 16.Turkey 🇹🇷
+      - 17.Turkey 🇹🇷
+      - YouTube without ads
+      - Fast 1
+rules:
+ - MATCH,♻️ BESTPING(@BN_CHANLL),🔰 SELECT(@BN_CHANLL)
